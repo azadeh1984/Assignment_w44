@@ -14,7 +14,7 @@ public class TodoItem {
 
 
 
-    public void s(int id){this.id= id;}
+    //public void setId(int id){this.id= id;}
     public int getId(){return id;}
 
     public void setTitle(String title){
@@ -22,7 +22,9 @@ public class TodoItem {
         this.title= title;}
     public String getTitle(){return title;}
 
-    public void setTaskDescription(String taskDescription){this.taskDescription= taskDescription;}
+    public void setTaskDescription(String taskDescription){
+        this.taskDescription= taskDescription;
+    }
     public String getTaskDescription(){return taskDescription;}
 
     public void setDeadline(LocalDate deadline) {
@@ -41,6 +43,11 @@ public class TodoItem {
 
     public Person getCreator() {
         return creator;}
+
+    public String getSummary(){
+        return creator.personInformation();
+
+    }
 
 }
 

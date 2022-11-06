@@ -7,24 +7,34 @@ public class TodoItemTask {
     private Person assignee;
 
     public int getId() {
-        return id;}
+        return id;
+    }
 
     public void setAssigned(boolean assigned) {
-        this.assigned = assigned;}
+        this.assigned = assigned;
+    }
 
     public boolean isAssigned() {
-        return assigned;}
+        return assigned;
+    }
 
     public void setTodoItem(TodoItem todoItem) {
-        this.todoItem = todoItem;}
+        this.todoItem = todoItem;
+    }
 
     public TodoItem getTodoItem() {
-        return todoItem;}
+        return todoItem;
+    }
 
     public void setAssignee(Person assignee) {
-        this.assignee = assignee;}
+        this.assignee = assignee;
+    }
 
     public Person getAssignee() {
-        return assignee;}
+        return assignee;
+    }
 
+    public String getSummary() {
+        return assignee.personInformation();
+    }
 }
