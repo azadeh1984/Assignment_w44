@@ -15,6 +15,7 @@ public class TodoItem {
     private LocalDate deadLine;
 
     public TodoItem() {
+
         this.deadLine = LocalDate.of(2022, 11, 30);
     }
 
