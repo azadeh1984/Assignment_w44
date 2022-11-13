@@ -14,6 +14,9 @@ public class Person {
 
     }
 
+    public Person() {
+    }
+
     public void setId(int id){this.id= id;}
     public int getId(){return id;}
 
