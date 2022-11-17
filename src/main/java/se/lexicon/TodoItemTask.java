@@ -11,7 +11,7 @@ public class TodoItemTask {
     }
 
     public void setAssigned(boolean assigned) {
-        this.assigned = assigned;
+        this.assigned= true;
     }
 
     public boolean isAssigned() {

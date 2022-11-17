@@ -1,5 +1,7 @@
 package se.lexicon;
 
+import java.util.Objects;
+
 public class AppUser extends Person {
 
     private String username;
@@ -37,6 +39,24 @@ public class AppUser extends Person {
         this.role = role;
     }
 
+    @Override
+    public String toString() {
+        return "AppUser{" +
+                "username='" + username + '\'' +
+                ", role=" + role +
+                '}';
+    }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        AppUser appUser = (AppUser) o;
+        return Objects.equals(username, appUser.username) && role == appUser.role;
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), username, role);
+    }
 }

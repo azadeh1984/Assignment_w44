@@ -1,5 +1,7 @@
 package se.lexicon;
 
+import java.util.Objects;
+
 public class Person {
     private int id;
     private String firstName;
@@ -39,4 +41,8 @@ public class Person {
         return "person : id:" +id + "firstName:" +firstName + "lastName:" +lastName+ "email:" +email;
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, firstName, lastName, email);
+    }
 }
