@@ -84,4 +84,7 @@ public class TodoItem {
 
     }
 
+    public LocalDate getDeadLine() {
+        return deadLine;
+    }
 }
